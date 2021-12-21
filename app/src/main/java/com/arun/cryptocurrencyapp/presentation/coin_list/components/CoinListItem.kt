@@ -22,13 +22,13 @@ fun CoinListItem(
 ){
     Row( modifier = Modifier
         .fillMaxWidth()
-        .padding(20.dp)
+        .padding(30.dp)
         .clickable { onItemClick(coin)},
         horizontalArrangement = Arrangement.SpaceBetween
 
     ){
         Text(
-            text = "${coin.id}. ${coin.name} (${coin.symbol})",
+            text = "${coin.rank}. ${coin.name} (${coin.symbol})",
             style = MaterialTheme.typography.body1,
             overflow = TextOverflow.Ellipsis
         )
